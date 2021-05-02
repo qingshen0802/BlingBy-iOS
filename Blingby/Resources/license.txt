@@ -1,0 +1,17 @@
+-- BEGIN LICENSE v1.0 DD232099 --
+name:
+notes: Gracenote Open Developer Program
+start_date: 0000-00-00
+client_id: 9924864
+musicid_file: enabled
+musicid_text: enabled
+musicid_stream: enabled
+musicid_cd: enabled
+playlist: enabled
+videoid: enabled
+video_explore: enabled
+local_images: enabled
+local_mood: enabled
+-- SIGNATURE DD232099 --
+lAADAgAeqhQmJD8jnNMomwuXpaL9cuK+aUXM2pFrzmTlyE1pAB8BPqFNWLw6j/SEdC5gz4wL9xCNs1kD6gOJCk4Dj/QN
+-- END LICENSE DD232099 --

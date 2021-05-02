@@ -1,0 +1,47 @@
+//
+//  Blingby-Prefix.pch
+//  Blingby
+//
+//  Created by Simon Weingand on 13/02/15.
+//  Copyright (c) 2015 Simon Weingand. All rights reserved.
+//
+
+#ifndef Blingby_Blingby_Prefix_pch
+#define Blingby_Blingby_Prefix_pch
+
+#define AFNETWORKING_ALLOW_INVALID_SSL_CERTIFICATES 1
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Availability.h>
+#import "Global/BlingbyConstants.h"
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef OBJC
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#if __IPHONE_OS_VERSION_MIN_REQUIRED
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#else
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <CoreServices/CoreServices.h>
+#endif
+
+#if IPHONE_7_0 && IPHONE_OS_VERSION_MAX_ALLOWED >=  __IPHONE_7_0
+#define IS_RUNNING_IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+#else
+#define IS_RUNNING_IOS7 NO
+#endif
+
+#import <CoreData.h>
+#import "CoreDataHandler.h"
+#import <SDImageCache.h>
+#import <RestKit.h>
+
+#endif
